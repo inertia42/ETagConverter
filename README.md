@@ -1,6 +1,6 @@
 # ETagConverter - LANraragi 英文标签批量翻译脚本
 
-这是一个适用于LANraragi的脚本插件，功能是将数据库中的来自E-Hentai上的英文标签批量翻译为中文标签。
+这是一个适用于LANraragi的脚本插件，功能是将数据库中的来自E-Hentai上的英文标签批量翻译为中文标签。相较于上游仓库，本脚本去除了对 namespace 的翻译功能，原因见[该 issue](https://github.com/zhy201810576/ETagConverter/issues/3)。
 
 ## 简介
 该脚本参考Guerra24编写的nHentai Source Converter脚本进行编写，结合EhTagTranslation项目提供的数据库，批量翻译来自E-Hentai插件搜刮的英文标签为中文标签。
@@ -12,7 +12,7 @@
 ## 使用方法(Docker为例)
 **P.S. <font color="red">该脚本在执行过程中会操作数据库，为了您的数据安全，在此强烈建议您备份原有数据库！！！</font>**
 
-1. 下载脚本
+1. 下载[脚本](https://github.com/inertia42/ETagConverter/raw/master/ETagConverter.pm)
 2. 上传脚本至LANraragi
 3. 下载最新的[EhTagTranslation/Database](https://github.com/EhTagTranslation/Database/releases)中文标签数据库`db.text.json`，并放置在`LANraragi`镜像的`database`目录下
 4. 打开该脚本配置，填写中文标签数据库绝对路径

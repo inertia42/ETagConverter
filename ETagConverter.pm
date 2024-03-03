@@ -74,7 +74,6 @@ sub run_script {
                 # 如果$namespace与'namespace'字段相同，则进行替换
                 if ( $element->{'namespace'} eq $namespace ) {
                     my $name = $element->{'frontMatters'}->{'name'};
-                    $item =~ s/$namespace/$name/;
                     my $data = $element->{'data'};
 
                     # 如果在'data'字段中存在$key，则进行替换

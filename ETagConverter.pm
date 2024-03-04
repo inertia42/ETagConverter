@@ -85,7 +85,8 @@ sub run_script {
                 }
             }
         }
-
+        my %seen = ();
+        @list = grep { !$seen{$_}++ } @list;
         $count++;
         # 将数组重新拼接为字符串
         my $ehtags = join( ', ', @list );
